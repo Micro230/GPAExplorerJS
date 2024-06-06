@@ -1,0 +1,43 @@
+{
+	"name": "gpaexplorer",
+	"version": "1.0.0",
+	"description": "A simple google photos archive explorer",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Micro230/GPAExplorerJS.git"
+	},
+	"author": "Micro230",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Micro230/GPAExplorerJS/issues"
+	},
+	"homepage": "https://github.com/Micro230/GPAExplorerJS#readme",
+	"devDependencies": {
+		"electron": "^30.0.9",
+		"electron-context-menu": "^4.0.0"
+	},
+	"build": {
+		"productName": "GPAExplorer",
+		"appId": "com.micro230.gpaexplorer",
+		"win": {
+			"target": [
+				"portable",
+				"nsis"
+			]
+		},
+		"portable": {
+			"artifactName": "GPAExplorer 1.0.0.exe"
+		},
+		"nsis": {
+			"artifactName": "GPAExplorer 1.0.0 Installer.exe"
+		}
+	},
+	"dependencies": {
+		"electron-context-menu": "^4.0.0",
+		"trash": "^8.1.1"
+	}
+}

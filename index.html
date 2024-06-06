@@ -1,0 +1,40 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+	<link rel="stylesheet" href="./libraries/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<title>GPAExplorer v1.0.0</title>
+</head>
+
+<body>
+	<div id="mainContainer">
+		<div id="sidebar">
+			<div id="titles" class="col-2"></div>
+			
+			<div id="versions">
+				<p>Node.js <span id="node-version"></span></p>
+				<p>Chromium <span id="chrome-version"></span></p>
+				<p>Electron <span id="electron-version"></span></p>
+			</div>
+		</div>
+		
+		<table class="table" id="imageTable"></table>
+	</div>
+
+	<div id="previewWindowContainer">
+		<div id="previewWindow">
+			<img id="imgWindow"></img>
+			<video id="vidWindow" controls></video>
+		</div>
+	</div>
+
+	<!-- You can also require other files to run in this process -->
+	<script src="./renderer.js"></script>
+	<script src="./libraries/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
